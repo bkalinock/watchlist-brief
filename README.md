@@ -5,7 +5,7 @@ price move for each name, the news that explains it, and what is on the calendar
 Built for students in SIBC and AIM who want a page they can show a recruiter that is
 clearly updated every week.
 
-**Live site:** https://USERNAME.github.io/watchlist-brief/
+**Live site:** https://bkalinock.github.io/watchlist-brief/
 
 The whole site is one file, `index.html`. No server, no build step, no API key.
 
