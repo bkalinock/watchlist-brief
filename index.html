@@ -180,94 +180,127 @@ const WATCHLIST = {
 };
 
 const BRIEF = {
-  mode: "sample",
-  asOf: "2026-10-16",
-  retrievedAt: "2026-10-16T16:30:00-04:00",
+  mode: "live",
+  asOf: "2026-10-27",
+  retrievedAt: "2026-10-28T10:05:00-04:00",
   priceType: "close",
   companies: {
     NVDA: {
       closes: [
-        { date: "2026-10-12", close: 100.00 },
-        { date: "2026-10-13", close: 101.40 },
-        { date: "2026-10-14", close: 99.80 },
-        { date: "2026-10-15", close: 103.10 },
-        { date: "2026-10-16", close: 104.20 }
+        { date: "2026-10-21", close: 221.97 },
+        { date: "2026-10-22", close: 212.21 },
+        { date: "2026-10-23", close: 210.96 },
+        { date: "2026-10-26", close: 216.00 },
+        { date: "2026-10-27", close: 217.94 }
       ],
       latest: null,
-      priceSource: "https://example.com/sample",
+      priceSource: "https://stockanalysis.com/stocks/nvda/history/",
       news: [
-        { date: "2026-10-15", headline: "Sample headline. Run the refresh-brief agent to replace this.", source: "Sample", url: "https://example.com/sample", why: "Sample. The agent writes one plain sentence here on why the item matters to the stock." }
+        { date: "2026-10-27", headline: "Nvidia to invest $3B in Meta's planned equity offering", source: "Stock Analysis", url: "https://stockanalysis.com/news/nvidia-3-billion-meta-offering/", why: "Nvidia is putting money into a customer's stock sale and expanding work on Meta's AI models, tying its chip demand to how Meta funds its AI spending." },
+        { date: "2026-10-27", headline: "Nvidia, Oracle expand NVIDIA Vera Rubin to multi-gigawatt scale", source: "TheFly via TipRanks", url: "https://www.tipranks.com/news/the-fly/nvidia-oracle-expand-nvidia-vera-rubin-to-multi-gigawatt-scale-thefly-news", why: "Vera Rubin systems and Vera CPUs are now generally available on Oracle's cloud, a sign of continued large-scale buildout of Nvidia hardware." }
       ],
-      upcoming: [
-        { date: "2026-10-28", event: "Sample event (replace by refreshing)", source: "Sample", url: "https://example.com/sample" }
-      ]
+      upcoming: []
     },
     JPM: {
       closes: [
-        { date: "2026-10-12", close: 100.00 },
-        { date: "2026-10-13", close: 99.30 },
-        { date: "2026-10-14", close: 98.90 },
-        { date: "2026-10-15", close: 98.20 },
-        { date: "2026-10-16", close: 97.60 }
+        { date: "2026-10-21", close: 335.19 },
+        { date: "2026-10-22", close: 336.54 },
+        { date: "2026-10-23", close: 331.58 },
+        { date: "2026-10-26", close: 334.04 },
+        { date: "2026-10-27", close: 335.79 }
       ],
       latest: null,
-      priceSource: "https://example.com/sample",
+      priceSource: "https://stockanalysis.com/stocks/jpm/history/",
       news: [
-        { date: "2026-10-14", headline: "Sample headline. Run the refresh-brief agent to replace this.", source: "Sample", url: "https://example.com/sample", why: "Sample." }
+        { date: "2026-10-22", headline: "J.P. Morgan Asset Management Expands Access to Its Tokenized Money Market Funds on Solana", source: "PR Newswire", url: "https://www.prnewswire.com/news-releases/jp-morgan-asset-management-expands-access-to-its-tokenized-money-market-funds-on-solana-302917188.html", why: "J.P. Morgan Asset Management is expanding access to its tokenized money market funds on Solana for qualified U.S. investors." }
       ],
-      upcoming: []
+      upcoming: [
+        { date: "2026-10-28", event: "Market-wide: Federal Reserve FOMC meeting (Oct 27-28) concludes, no economic projections this meeting. Rate decisions matter to bank earnings.", source: "Federal Reserve", url: "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm" }
+      ]
     },
     ACN: {
       closes: [
-        { date: "2026-10-12", close: 100.00 },
-        { date: "2026-10-13", close: 100.20 },
-        { date: "2026-10-14", close: 99.90 },
-        { date: "2026-10-15", close: 100.10 },
-        { date: "2026-10-16", close: 100.05 }
+        { date: "2026-10-21", close: 240.26 },
+        { date: "2026-10-22", close: 258.74 },
+        { date: "2026-10-23", close: 249.37 },
+        { date: "2026-10-26", close: 247.23 },
+        { date: "2026-10-27", close: 235.16 }
       ],
       latest: null,
-      priceSource: "https://example.com/sample",
-      news: [],
-      upcoming: [
-        { date: "2026-10-22", event: "Sample event (replace by refreshing)", source: "Sample", url: "https://example.com/sample" }
-      ]
-    },
-    DE: {
-      closes: [
-        { date: "2026-10-12", close: 100.00 },
-        { date: "2026-10-13", close: 102.50 },
-        { date: "2026-10-14", close: 101.80 },
-        { date: "2026-10-15", close: 103.90 },
-        { date: "2026-10-16", close: 102.70 }
-      ],
-      latest: null,
-      priceSource: "https://example.com/sample",
+      priceSource: "https://stockanalysis.com/stocks/acn/history/",
       news: [
-        { date: "2026-10-13", headline: "Sample headline. Run the refresh-brief agent to replace this.", source: "Sample", url: "https://example.com/sample", why: "Sample." }
+        { date: "2026-10-27", headline: "Accenture awarded $151.46M Air Force task order", source: "TheFly via TipRanks", url: "https://www.tipranks.com/news/the-fly/accenture-awarded-151-46m-air-force-task-order-thefly-news", why: "A sole-source federal award for the ICBM FENCES program, with a $228M ceiling, adds to government work." },
+        { date: "2026-10-21", headline: "Accenture downgraded to Neutral from Outperform at Baird", source: "TheFly via TipRanks", url: "https://www.tipranks.com/news/the-fly/accenture-downgraded-to-neutral-from-outperform-at-baird-thefly-news", why: "Baird says the valuation looks fair after shares more than doubled since June, which can cap enthusiasm." }
       ],
       upcoming: []
     },
-    LLY: {
+    IREN: {
       closes: [
-        { date: "2026-10-12", close: 100.00 },
-        { date: "2026-10-13", close: 98.70 },
-        { date: "2026-10-14", close: 99.60 },
-        { date: "2026-10-15", close: 101.30 },
-        { date: "2026-10-16", close: 102.90 }
+        { date: "2026-10-21", close: 27.84 },
+        { date: "2026-10-22", close: 25.51 },
+        { date: "2026-10-23", close: 24.91 },
+        { date: "2026-10-26", close: 25.43 },
+        { date: "2026-10-27", close: 27.44 }
       ],
       latest: null,
-      priceSource: "https://example.com/sample",
+      priceSource: "https://stockanalysis.com/stocks/iren/history/",
       news: [
-        { date: "2026-10-16", headline: "Sample headline. Run the refresh-brief agent to replace this.", source: "Sample", url: "https://example.com/sample", why: "Sample." }
+        { date: "2026-10-27", headline: "IREN Stock Jumps on October 27: Here's Why", source: "TipRanks", url: "https://www.tipranks.com/news/iren-stock-jumps-on-october-27-heres-why", why: "Shares rose on sentiment from Anthropic's IPO filing and unconfirmed reports of a new AI cloud customer, though the stock is still down about 38% over the past month." },
+        { date: "2026-10-21", headline: "Iren to advance Europe Ai ambitions with 300 MW Spanish campus", source: "TheFly via TipRanks", url: "https://www.tipranks.com/news/the-fly/iren-to-advance-europe-ai-ambitions-with-300-mw-spanish-campus-thefly-news", why: "A planned 300 MW AI data center in Spain, with operations targeted for 2028, extends IREN's capacity beyond North America." }
       ],
       upcoming: [
-        { date: "2026-10-30", event: "Sample event (replace by refreshing)", source: "Sample", url: "https://example.com/sample" }
+        { date: "2026-11-05", event: "Q1 FY27 results conference call (quarter ended Sep 30). Date confirmed on IREN's own events page; the 5:00 PM ET start time was seen only on a third-party copy (Pluang) of the company announcement.", source: "IREN investor relations events page", url: "https://iren.com/investor/events-and-presentations" }
+      ]
+    },
+    LLY: {
+      closes: [
+        { date: "2026-10-21", close: 1270.75 },
+        { date: "2026-10-22", close: 1306.69 },
+        { date: "2026-10-23", close: 1273.46 },
+        { date: "2026-10-26", close: 1279.14 },
+        { date: "2026-10-27", close: 1281.91 }
+      ],
+      latest: null,
+      priceSource: "https://stockanalysis.com/stocks/lly/history/",
+      news: [
+        { date: "2026-10-28", headline: "Lilly's Retatrutide Beats Ozempic 2 mg on A1C and Weight Loss in Head-to-Head Type 2 Diabetes Trial", source: "PR Newswire", url: "https://www.prnewswire.com/news-releases/lillys-retatrutide-delivered-greater-a1c-reduction-and-more-than-double-the-weight-loss-of-ozempics-highest-approved-dose-in-head-to-head-trial-302921328.html", why: "Positive Phase 3 head-to-head results for retatrutide strengthen the case for Lilly's next obesity and diabetes drug." },
+        { date: "2026-10-27", headline: "Patrik Jonsson to retire after 36 years; Ilya Yuffa named president, Lilly Global Markets", source: "PR Newswire", url: "https://www.prnewswire.com/news-releases/patrik-jonsson-to-retire-after-36-years-ilya-yuffa-named-president-lilly-global-markets-302921191.html", why: "Lilly will merge its U.S. and international units into one global markets business starting January 1, 2027." }
+      ],
+      upcoming: [
+        { date: "2026-10-29", event: "Q3 2026 earnings, call at 10:00 AM ET. Date as reported by a third-party copy (Finviz) of Lilly's Oct 15 announcement; Lilly's own pages could not be opened.", source: "Lilly announcement via Finviz", url: "https://finviz.com/news/403165/lilly-confirms-date-and-conference-call-for-third-quarter-2026-financial-results-announcement" }
       ]
     }
   }
 };
 
 const CHANGELOG = [
+  {
+    date: "2026-10-28",
+    summary: [
+      "Fix after number-checker review (EVAL.md A to D). Prices are now closes only: latest is null and priceType is close for every ticker; asOf is 2026-10-27.",
+      "NVDA 221.97 to 217.94 (-1.8%), JPM 335.19 to 335.79 (+0.2%), ACN 240.26 to 235.16 (-2.1%), IREN 27.84 to 27.44 (-1.4%), LLY 1270.75 to 1281.91 (+0.9%), all Oct 21 to Oct 27 closes unchanged from the earlier entry.",
+      "No Oct 28 close recorded: the only page opened (stockanalysis NVDA history) showed the market open at 10:05 AM EDT, so its Oct 28 figure is intraday.",
+      "JPM news (Oct 22, tokenized money market funds on Solana): reworded the why line to drop the unsupported claim 'a small but growing business line'.",
+      "IREN calendar: Nov 5 results call is now sourced to IREN's own events page (iren.com/investor/events-and-presentations), which lists the call on that date. It does not show a time, so the 5:00 PM ET time is flagged in the event text as from a third-party copy.",
+      "LLY calendar: Oct 29 earnings could not be confirmed on a company page (lilly.gcs-web.com and investor.lilly.com returned 403, no SEC filing for it found). Kept the event and stated in its text that the date is as reported by a third-party copy (Finviz) of Lilly's announcement."
+    ],
+    note: "Verify first: LLY Oct 29 earnings date on Lilly's own investor page, since only a Finviz copy was seen. The IREN 5:00 PM ET call time is still unconfirmed on a company page. The news items and everything else are unchanged from the earlier Oct 28 entry, which is kept below."
+  },
+  {
+    date: "2026-10-28",
+    summary: [
+      "NVDA 221.97 to 218.17 (-1.7%) on Nvidia's $3B investment in Meta's equity offering",
+      "JPM 335.19 to 336.35 (+0.3%) on tokenized money market funds expanding to Solana",
+      "ACN 240.26 to 243.20 (+1.2%) on a $151.46M Air Force task order, after a Baird downgrade on Oct 21",
+      "IREN 27.84 to 27.26 (-2.1%) on a jump tied to Anthropic IPO filing sentiment",
+      "LLY 1270.75 to 1292.05 (+1.7%) on positive retatrutide head-to-head diabetes data",
+      "Removed DE (no longer in WATCHLIST) and added IREN.",
+      "Calendar added: LLY earnings Oct 29, IREN earnings Nov 5, FOMC meeting concludes Oct 28 (listed under JPM).",
+      "Missing: no confirmed scheduled events in the window for NVDA (next earnings shown as Nov 17 on Stock Analysis, outside the window and not recorded), JPM, or ACN (next earnings shown as Dec 17).",
+      "Missing: JPM has one news item and the others two (up to three allowed). Several other candidate articles (CNBC, Reuters, Barron's, Business Wire, Investopedia, Invezz, Globenewswire) could not be opened and were left out."
+    ],
+    note: "The last price in each ticker is intraday on Oct 28; the five closes are Oct 21 to Oct 27. The 10:05 AM ET time comes from a note on the NVDA history page; the other tickers were fetched in the same minute but their pages did not state a time. The first-to-last change therefore mixes five closes with one intraday price. The FOMC item is market-wide and is filed under JPM; the Fed page lists the meeting as Oct 27-28 and I did not open the decision announcement. IREN's earnings date was read from a Pluang repost of the Oct 22 GlobeNewswire release (the original returned 403). LLY earnings date was read from a Finviz copy of Lilly's release (Lilly's own page returned 403). Several news items cite TheFly/TipRanks, which are aggregators."
+  },
   {
     date: "2026-10-16",
     summary: [
